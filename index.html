@@ -1,23 +1,217 @@
-<!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
+    <!-- 
+Website Redesign
+- navigation bar (Home, About, Projects (dropdown menu), Resume, and Contact)
+- original sitemaps and revised sitemaps
+- website critique video
+- mockup designs
+-->
+
+<!DOCTYPE html>
+<html lang="EN-CA">
+  <head>
+    <title> Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-sale=1.0, width=device-width">
+
+    <!-- 
+Code copied from: https://www.w3schools.com/css/tryit.aspfilename=trycss_dropdown_navbar2
+
+Author: W3Schools 
+
+Name: CSS Dropdowns 
+
+Description: Demonstrates how to create a navigation bar along with a dropdown menu 
+
+Date retrieved: Wednesday, November 12, 2025
+-->
+
+    <style>
+      html {
+        font-size: 16px;
+        /* change ems */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        height: 80px;
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        margin: auto;
+      }
+
+      li.logo {
+        margin-right: auto;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: rgb(146, 110, 79);
+        text-align: center;
+        padding: 20px 10px;
+        text-decoration: none;
+      }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 50px;
+      }
+
+      .dropdown-content a {
+        color: rgb(146, 110, 79);
+        padding: 20px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #f9f9f9;
+        color: brown;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: brown;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .overlay {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      mark {
+        background-color: rgb(248, 247, 246);
+        padding: 20px;
+        display: inline-block;
+        width: 500px;
+        height: 1em;
+        border-radius: 10px;
+      }
+
+      .content {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        clear: both;
+      }
+
+      .fullwidth {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin: 0;
+        margin-top: 2em;
+        height: auto;
+      }
+
+      .half-left {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        line-height: 2em;
+        font-size: 1.5em;
+      }
+
+      .half-right {
+        width: 50%;
+        float: left;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .left {
+        text-align: left;
+        margin-left: 25px;
+        line-height: 1.5;
+      }
+      
+      p {
+        font-size: .8em;
+        text-align: left;
+        margin-left: 30px;
+        display: block;
+      }
+      
+      h1, h2 {
+        text-align: center;
+      }
+      
+       iframe {
+        display: block;
+        margin: auto; 
+      }
     
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
+      <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
+      <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>Projects</b></a>
+        <div class="dropdown-content">
+          <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
+          <a href="https://sydney-yee21.github.io/Service-Design/">Service Design</a>
+          <a href="#"><b>Website Redesign</b></a>
+        </div>
+      </li>
+      <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
+      <li><a href="#home">Contact</a></li>
+    </ul>
+
+    <div class="content">
+      <div class="half-left">
+        <img src="revised.png" alt="revised site map">
+        <h3>
+          Sitemaps
+        </h3>    
+      </div>
+    </div>
+
+  </body>
+</html>
