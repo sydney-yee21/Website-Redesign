@@ -141,8 +141,18 @@ Date retrieved: Wednesday, November 12, 2025
         height: auto;
       }
 
+
+      .half-right {
+        width: 40%;
+        float: left;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+      }
+      
       .half-left {
-        width: 50%;
+        width: 60%;
         float: left;
         box-sizing: border-box;
         display: flex;
@@ -153,21 +163,7 @@ Date retrieved: Wednesday, November 12, 2025
         line-height: 2em;
         font-size: 1.5em;
       }
-
-      .half-right {
-        width: 50%;
-        float: left;
-        display: block;
-        box-sizing: border-box;
-        text-align: center;
-        padding: 20px;
-      }
       
-      .left {
-        text-align: left;
-        margin-left: 25px;
-        line-height: 1.5;
-      }
       
       p {
         font-size: .8em;
@@ -183,7 +179,53 @@ Date retrieved: Wednesday, November 12, 2025
         display: block;
         margin: auto; 
       }
-       
+      
+      .lis {
+        text-align: left;
+        margin: 50px;
+        margin-top: -25px;
+        font-size: .9em;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+      }
+      .grid-item {
+  text-align: center;
+}
+      
+.top-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.top-container img {
+  width: 110%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+.bottom-container {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-container h1 {
+  color: black;
+  font-size: 2.5em;
+  margin-top: 200px;
+background-color: rgb(248, 247, 246);
+  text-align: center;
+  padding: 120px;
+  margin-bottom: -20px;
+}
     
     </style>
   </head>
@@ -210,14 +252,57 @@ Date retrieved: Wednesday, November 12, 2025
         <h3>
           Sitemaps
         </h3>   
-        
-      <li>Mapped the original Good Intentions website structure</li>
+        <div class="lis">
+          <li>Mapped the original Good Intentions website structure</li>
       <li>Identified navigation issues and pain points</li>
       <li>Designed a new simplified version sitemap for improved user flow</li>
-   
+        </div>
+         </div>
+      <div class="half-right">
+  <div class="top-container">
+    <img src="sitemap.png" alt="original site map">
+  </div>
+  <div class="bottom-container">
+    <h1>Website Redesign</h1>
+  </div>
+</div>
+    </div>
     
-      </div>
+     <div class="fullwidth">
+      <img src="line.png" alt="diagonal black line" style="width:100%;">
+    </div>
+    
+     <h1>
+      Website Critique
+    </h1>
+    
+    <h2>
+   Critiqued the website across 3 key areas: visual design, usability and content quality
+    </h2>
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lHca1WxlD1M?si=zFmMpkgHZmuBuSAS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <div class="fullwidth">
+      <img src="line.png" alt="diagonal black line" style="width:100%;">
     </div>
 
+     <h1>
+      Mockups
+    </h1>
+    
+    <h2>
+   Created high-fidelity mockups to visualize and present the redesigned website
+    </h2>
+ 
+<div class="container">
+  <div class="grid-item"><img src="redesign.png" alt="home page website redesign"></div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</div>
+    
+    <div class="fullwidth">
+      <img src="line.png" alt="diagonal black line" style="width:100%;">
+    </div>
   </body>
 </html>
